@@ -1,0 +1,108 @@
+Create a "Project Hub" - Project Management for Photographers
+
+Application Concept: "Project Hub" - A specialized project management desktop/web application for photographers to manage all aspects of their photoshoots, from planning to financial tracking.
+
+Core Features & Detailed Specifications:
+
+1. Project Creation with Templates
+
+    Function: Users can create new projects.
+
+    Templates: Provide pre-defined templates for different shoot types (e.g., Wedding, Portrait, Commercial, Event). Each template should come with a pre-populated checklist of common tasks for that category.
+
+    Customization: Users must be able to create a project from scratch (blank template) or fully customize any pre-existing template.
+
+2. Project Dashboard
+
+    Purpose: A central overview for each project.
+
+    Content:
+
+        Project Status: Visual indicator (e.g., "Planning," "In Progress," "Editing," "Delivered").
+
+        Key Deadlines: Display the next 2-3 most urgent deadlines from the project's task list and calendar.
+
+        Key Contacts: A dedicated section to store and quickly view essential contacts (e.g., Client, Assistant, Makeup Artist, Venue Coordinator).
+
+        Budget Snapshot: A high-level summary showing: Total Budget, Incurred Costs, and Projected Profit/Loss.
+
+3. Checklists & Task Management
+
+    Function: A robust system for creating and managing to-do lists within each project.
+
+    Features:
+
+        Task Creation: Users can add custom tasks (e.g., "Book makeup artist," "Sign contract," "Charge batteries").
+
+        Assignment: Ability to assign tasks to team members (or mark as personal). Each task must have an assignee field.
+
+        Due Dates: Each task should have a settable due date.
+
+        Progress Tracking: Tasks should be markable as "To Do," "In Progress," and "Completed."
+
+        Organization: Tasks should be organizable into sections or sub-lists (e.g., "Pre-Production," "Shoot Day," "Post-Production").
+
+4. Budget Tracker
+
+    Function: A dedicated module for financial oversight within each project.
+
+    Features:
+
+        Planned vs. Actual: A table or list for entering both estimated and actual expenses.
+
+        Expense Items: Users can add line items (e.g., "Studio Rental," "Assistant Fee," "Transportation," "Equipment Rental").
+
+        Fields for each item: Description, Planned Cost, Actual Cost, Payment Status (Paid/Unpaid).
+
+        Automatic Calculation: The system must automatically calculate:
+
+            Total Planned Expenses
+
+            Total Actual Expenses
+
+            Project Profit/Loss (using the formula: Project Budget - Total Actual Expenses).
+
+        Visualization: A simple chart (like a bar chart) comparing Planned vs. Actual costs is highly desirable.
+
+5. Integrated Calendar
+
+    Function: A unified calendar view that aggregates all time-sensitive data.
+
+    Data Sources: The calendar must automatically pull events from:
+
+        Scheduled photoshoots (from the project details).
+
+        Meetings (e.g., client consultations, location scouting).
+
+        Task deadlines (from the project's checklists).
+
+    Features:
+
+        View Options: Day, Week, and Month views.
+
+        Event Details: Clicking on a calendar event should show basic details and provide a link to the respective project.
+
+        Reminders: System-level notifications/reminders for upcoming events and deadlines.
+
+Technical & Design Requirements:
+
+    UI/UX: Clean, modern, and intuitive interface. Prioritize clarity and ease of use over complex features.
+
+    Data Structure: Ensure data is siloed per project. A user should be able to have multiple active projects without data crossover.
+
+    Technology Stack: (You can specify one here, or leave it open. For example: "Use a React/Vue.js frontend with a Node.js/Python backend and a SQL database.")
+
+Example User Flow for Clarity:
+
+    User selects "New Project" -> Chooses "Wedding" template.
+
+    The system creates a project with a pre-filled checklist ("Book venue," "Create shot list," "Send questionnaire to couple").
+
+    User goes to the Budget Tracker and inputs the client's package price as the project budget, then adds planned expenses.
+
+    User assigns the "Book makeup artist" task to their assistant with a deadline.
+
+    The assistant's deadline and the wedding date itself appear automatically in the main Calendar view.
+
+    As actual costs are logged, the Budget Tracker and Project Dashboard update in real-time to show profitability.
+
